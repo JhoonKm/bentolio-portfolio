@@ -62,6 +62,7 @@ body {
   height: 556px;
   background: #F8AFA6;
   border-radius: 20px;
+  object-fit: cover;
 }
 .work {
   background: #FADCD9;
@@ -84,6 +85,13 @@ body {
   height: 80px;
   background: #F8AFA6;
   border-radius: 16px;
+  object-fit: cover;
+}
+.work-desc {
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  margin-left: 16px;
 }
 .about {
   background: #FADCD9;
@@ -139,6 +147,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.contact-email {
+  margin-top: 24px;
+  font-size: 18px;
+}
 .socials {
   background: #FADCD9;
   border-radius: 20px;
@@ -154,4 +166,38 @@ body {
   font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Doom Game Modal Styles */
+#doom-modal-bg {
+  position: fixed; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:1000;
+}
+#doom-modal {
+  position: fixed; left:50%; top:50%; transform:translate(-50%,-50%);
+  background: #23272b; border-radius: 16px; box-shadow: 0 0 24px #000a;
+  z-index:1001; padding: 24px 24px 8px 24px;
+  display: flex; flex-direction: column; align-items: center;
+}
+#doom-canvas {
+  display: block;
+  background: #444;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+#doom-ui {
+  text-align: center;
+  color: #fff;
+}
+#doom-close {
+  background: #f33;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 8px;
 }
